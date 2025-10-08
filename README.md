@@ -1,6 +1,6 @@
 # STRIPE LANDING PAGE
 
-[**LIVE DEMO**](link address)
+[**LIVE DEMO**](https://stripe-landing.vercel.app/)
 
 ## TECH STACK
 
