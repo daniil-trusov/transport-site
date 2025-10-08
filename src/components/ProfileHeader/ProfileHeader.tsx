@@ -1,12 +1,16 @@
 import { PhoneIcon, WebIcon } from '@/assets/icons/header';
 import { StripeLogoImg } from '@/assets/images';
+import { ProfilePatternL, ProfilePatternR } from '@/assets/images/patterns';
 import { ContentContainer } from '@/components/shared';
 import { PROFILE_ABOUT } from '@/constants';
 import { Breadcrumbs } from './components';
 
 export const ProfileHeader = () => {
   return (
-    <section className="bg-[#F8F8FD] h-full w-full">
+    <section className="relative bg-[#F8F8FD] -z-10 overflow-hidden">
+      <ProfilePatternL className="absolute left-0 top-0 -z-5" />
+      <ProfilePatternR className="absolute right-0 -z-5 bottom-0" />
+
       <ContentContainer className="pt-10 pb-[73px]">
         <Breadcrumbs />
 

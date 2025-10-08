@@ -1,3 +1,4 @@
+import { ProfilePatternL, TestimonialsPatternR } from '@/assets/images/patterns';
 import { ButtonStyled, CardsContainer, ContentContainer } from '@/components/shared';
 import { TESTIMONIALS } from '@/constants';
 import clsx from 'clsx';
@@ -8,8 +9,11 @@ export const Testimonials = () => {
   const cardsTotal = 9;
 
   return (
-    <section className="space-y-4 pt-[72px] pb-[45px]  bg-[#F8F8FD]">
-      <ContentContainer className="flex flex-col md:flex-row gap-8">
+    <section className="relative overflow-hidden -z-10 bg-[#F8F8FD]">
+      <ProfilePatternL className="absolute left-0 top-0 -z-5" />
+      <TestimonialsPatternR className="absolute right-0 -z-5 bottom-0" />
+
+      <ContentContainer className="flex flex-col md:flex-row gap-8 pt-[72px] pb-[45px]">
         <div className="flex flex-1 flex-col xl:max-w-[422px]">
           <h2 className="font-extrabold font-[lato] text-[48px] text-[#25324B]">
             Що <span className="text-[#26A4FF]">кажуть люди?</span>
