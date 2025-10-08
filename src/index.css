@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap&subset=latin,cyrillic');
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Lato";
+  src: url("/src/assets/fonts/Lato-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-rubik: "Rubik", sans-serif;
+  --font-lato: "Lato", sans-serif;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: var(--font-rubik);
+  line-height: 1.6;
   font-weight: 400;
 
   font-synthesis: none;
@@ -17,3 +31,16 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.img-pixelated {
+  image-rendering: pixelated;
+}
+
+/*
+Rubik 400: font-[rubik] font-normal
+Rubik 500: font-[rubik] font-medium
+Rubik 600: font-[rubik] font-semibold
+Rubik 700: font-[rubik] font-bold
+
+Lato 800: font-[lato] font-extrabold
+*/
