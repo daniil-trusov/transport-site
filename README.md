@@ -1,5 +1,9 @@
 # STRIPE LANDING PAGE
 
+## DESCRIPTION
+
+This project not only recreates the mockup design with a fully responsive layout across all screen sizes but also provides modular, functional, and easily extendable components to simplify future development.
+
 [**LIVE DEMO**](https://stripe-landing.vercel.app/)
 
 ## TECH STACK
@@ -19,10 +23,6 @@ Clone the repository and run the following commands in your terminal:
 npm install
 npm run dev
 ```
-
-## DESCRIPTION
-
-This project not only recreates the mockup design with a fully responsive layout across all screen sizes but also provides modular, functional, and easily extendable components to simplify future development.
 
 ## FEATURES
 
